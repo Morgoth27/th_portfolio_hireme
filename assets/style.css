@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    padding-left: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body, html {
+    margin: 0%;
+    height: 100%;
+    width: 100%;
+    background-color: #202020;
+}
+
+.container {
+    display: flex;
+    flex-flow: wrap;
+    position: relative;
+    height: 100vh;
+    min-height: max-content;
+    width: 100vh;
+    background-image: url(../assets/Morgoth-half.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}
+
+header {
+    display: inline-flex;
+    position: absolute;
+    justify-content: space-between;
+    padding: 2%;
+    font-size: xx-large;
+    top: 1em;
+    right: 2.5em;
+    width: 120px;
+}
+
+.headerTiffany {
+    color: #202020;
+    margin-right: 5px;
+    padding-right: 7px;
+}
+
+.headerHing, .cme, .me, .work {
+    color: blanchedalmond;
+    padding-left:9px;
+}
+
+.nav {
+    display: inline-flex;
+    position: absolute;
+    font-size: xx-large;
+    top: 9em;
+    right: -9em;
+    width: 400px;
+}
+
+.aboutMeNav {
+    display: inline-flex;
+    position: absolute;
+    top: -.5em;
+    right: 7.5em;
+    padding-left: 2px;;
+}
+
+.contactNav {
+    display: inline-flex;
+    position: absolute;
+    top: 1.5em;
+    right: 7.5em;
+    padding-left: 2px;;
+}
+
+.workNav {
+    display: inline-flex;
+    position: absolute;
+    top: 3.5em;
+    right: 6.7em;
+    padding-left: 2px;
+}
+
+li {
+    list-style-type: none;
+}
+li:hover {
+    font-weight: 600;
+}
