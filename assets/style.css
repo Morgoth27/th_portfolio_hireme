@@ -1,8 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin: 0;
-    padding:0'
 }
 
 body, html {
@@ -82,6 +80,7 @@ header {
     padding-left: 2px;
 }
 
+/* hover glow properties over name on main page */
 .aboutMeNav:hover,
 .contactNav:hover,
 .workNav:hover {
@@ -96,7 +95,7 @@ header {
     padding-top: 1%;
     height: 100vh;
     min-height: max-content;
-    min-width: 100vh;
+    min-width: 100%;
 }
 
 .container2 section {
@@ -113,12 +112,12 @@ header {
     justify-content: center;
     max-height:auto;
 }
+/* hover over properties for the body portion of this webpage*/
 
 .aboutMe:hover, .contact:hover, .myWork:hover {
     opacity: 100%;
     transition: all 500ms;
-    border: 5px solid blanchedalmond;
-    
+    border: 3px solid blanchedalmond;
 }
 
 .aboutMe h2, .contact h2, .myWork h2 {
@@ -126,7 +125,6 @@ header {
     flex-direction: row;
     position: relative;
     padding-left: 2%;
-    padding-top: 1%;
     font-size: 50px;
 }
 
@@ -143,10 +141,12 @@ header {
     flex-direction: row;
     position: relative;
     padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
     flex-wrap: wrap;
     min-width: 100%;
-    min-height: 33%;
-    max-height:auto;
+    min-height: 25%;
+    max-height: auto;
 }
 
 .aboutMeText2 {
@@ -158,6 +158,10 @@ header {
 .myEmail {
     font-size: 200%;
     align-content: center;
+}
+
+.emailLink:hover {
+    text-shadow: 0px 0px 7px #abaaac;
 }
 
 .listedWork {
@@ -191,6 +195,8 @@ header {
     filter: grayscale(100%);
 }
 
+/*removing bullets from list style type html*/
+
 li {
     list-style-type: none;
 }
@@ -208,11 +214,14 @@ li {
     max-height: 100px;
     min-height: 100px;
     height: 100px;
-    width: 100vh;
+    width: 200%;
     align-content: center;
+    align-items: center;
     font-size: 15px;
     position: relative;
 }
+
+/*remove all default formatting for links, including the shade they take after being clicked*/
 
 a {
     text-decoration: inherit;
@@ -221,5 +230,27 @@ a {
 
 a:visited {
     color: inherit;
+}
+
+/* media queries for flucuations in screen size */
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 50%;
+    } 
+    .listedWork {
+        flex-direction: column;
+        max-height: min-content;
+    }
+    .aboutMe {
+        max-height: min-content;
+        max-width: 50%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+
+    .container {
+        max-width: 50%;
+    }
 }
 
