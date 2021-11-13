@@ -1,9 +1,12 @@
 * {
     box-sizing: border-box;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    padding:0'
 }
 
 body, html {
+    display: flex;
     margin: 0%;
     height: 100%;
     width: 100%;
@@ -79,6 +82,12 @@ header {
     padding-left: 2px;
 }
 
+.aboutMeNav:hover,
+.contactNav:hover,
+.workNav:hover {
+    text-shadow: 0px 0px 7px #abaaac;
+}
+
 .container2 {
     display: flex;
     flex-wrap: wrap;
@@ -97,11 +106,12 @@ header {
     position: relative;
     border: 3px solid black;
     background-color: cornsilk;
-    opacity: 50%;
+    opacity: 70%;
     max-width: 100%;
     min-width: 100%;
     min-height: 300px;
-    justify-content: center
+    justify-content: center;
+    max-height:auto;
 }
 
 .aboutMe:hover, .contact:hover, .myWork:hover {
@@ -135,7 +145,50 @@ header {
     padding-left: 2%;
     flex-wrap: wrap;
     min-width: 100%;
-    max-height: 33%;
+    min-height: 33%;
+    max-height:auto;
+}
+
+.aboutMeText2 {
+    padding-top: 2%;
+    font-size: 125%;
+    align-content: center;
+}
+
+.myEmail {
+    font-size: 200%;
+    align-content: center;
+}
+
+.listedWork {
+    position: relative;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    align-content: center;
+}
+
+.filler1, .filler2, .filler3 {
+    padding: 0px 30px 0px 30px;
+    transition: all 1s ease-in-out;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 3%;
+}
+
+.filler1 img:hover,
+.filler2 img:hover {
+    width: 300px;
+    border: dimgrey 2px solid;
+    filter: none;
+}
+
+.filler1 img, .filler2 img {
+    border: dimgrey 2px dashed;
+    border-radius: 25px;
+    filter: grayscale(100%);
 }
 
 li {
@@ -143,19 +196,30 @@ li {
 }
 
 .caticon {
-    max-width: 25px;
-    max-height: 25px;
+    max-width: 30px;
+    max-height: 30px;
 }
 
 .footer {
-    align-items: center;
     display: flex;
-    flex-direction: row;
-    position: relative;
+    flex-direction: column;
     color: cornsilk;
     padding: 1%;
-    justify-content: center;
-
+    max-height: 100px;
+    min-height: 100px;
+    height: 100px;
+    width: 100vh;
+    align-content: center;
+    font-size: 15px;
+    position: relative;
 }
 
+a {
+    text-decoration: inherit;
+    color:inherit
+}
+
+a:visited {
+    color: inherit;
+}
 
